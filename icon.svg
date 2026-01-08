@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#9333ea" opacity="0.1"/>
+  
+  <!-- Ceramic vase shape -->
+  <defs>
+    <linearGradient id="vaseGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ec4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9333ea;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="glazeDrip" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Vase body -->
+  <path d="M 80 50 Q 75 60, 75 80 L 75 130 Q 75 150, 90 155 L 110 155 Q 125 150, 125 130 L 125 80 Q 125 60, 120 50 Z" 
+        fill="url(#vaseGradient)" stroke="#7c3aed" stroke-width="2"/>
+  
+  <!-- Vase rim -->
+  <ellipse cx="100" cy="50" rx="20" ry="6" fill="#fbbf24" stroke="#7c3aed" stroke-width="2"/>
+  
+  <!-- Glaze drips on vase -->
+  <path d="M 85 70 Q 84 75, 85 80 L 85 95 Q 85 98, 87 98 Q 89 98, 89 95 L 89 80 Q 90 75, 89 70 Z" 
+        fill="url(#glazeDrip)" opacity="0.8"/>
+  <path d="M 105 65 Q 104 70, 105 75 L 105 100 Q 105 103, 107 103 Q 109 103, 109 100 L 109 75 Q 110 70, 109 65 Z" 
+        fill="url(#glazeDrip)" opacity="0.8"/>
+  <path d="M 95 75 Q 94 80, 95 85 L 95 110 Q 95 113, 97 113 Q 99 113, 99 110 L 99 85 Q 100 80, 99 75 Z" 
+        fill="url(#glazeDrip)" opacity="0.7"/>
+  
+  <!-- Sparkle effects -->
+  <circle cx="70" cy="90" r="3" fill="#fbbf24" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="130" cy="100" r="2.5" fill="#60a5fa" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="100" cy="140" r="2" fill="#ec4899" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="3s" repeatCount="indefinite"/>
+  </circle>
+</svg>
